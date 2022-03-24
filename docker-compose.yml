@@ -22,7 +22,7 @@ services:
     ports:
       - '8090:8090'
   nginx:
-    image: 'loraine/nginx:latest'
+    image: loraine/nginx:latest
     build:
       context: front-etg/nginx
     mem_limit: 128m
