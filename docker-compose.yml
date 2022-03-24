@@ -17,10 +17,12 @@ services:
   api:
     image: loraine/backend:latest
     build:
-      context: back-etg
+      context: back-etg/back-etg
       dockerfile: Dockerfile
     ports:
       - '8090:8090'
+    links:
+      - db
   nginx:
     image: loraine/nginx:latest
     build:
